@@ -1,6 +1,6 @@
 (* stemmer.ml: Generates stems of English words.
  *
- * Copyright © 2003 by Erik Arneson <erik@aarg.net>
+ * Copyright (C) 2003-2010 by Erik Arneson <dybbuk@lnouv.com>
  *   No guarantees or restrictions on use.  This code is released into the
  *   public domain.
  *
@@ -303,9 +303,3 @@ let stem_lte s1 s2 =
   (stem s1) <= (stem s2)
 ;;
 
-(*
- * Local variables:
- * folded-file: t
- * folding-internal-margins: 1
- * end:
- *)

@@ -1,0 +1,8 @@
+stcaml
+*.cma
+*.cmi
+*.cmo
+*.cmx
+*.cmxa
+*.a
+*.o

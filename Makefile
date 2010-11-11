@@ -9,8 +9,7 @@ OCAMLC = ocamlc.opt
 OCAMLOPT = ocamlopt.opt
 OCAMLDEP = ocamldep
 OCAMLNCFLAGS = -unsafe
-OCAMLLIB = /usr/lib/ocaml
-OCAMLFIND = /usr/bin/ocamlfind
+OCAMLFIND = ocamlfind
 OCAMLLIBS = 
 
 LIBSRC = stemmer.ml
