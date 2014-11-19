@@ -1,6 +1,6 @@
 (* stemmer.ml: Generates stems of English words.
  *
- * Copyright (C) 2003-2010 by Erik Arneson <dybbuk@lnouv.com>
+ * Copyright (C) 2003-2010, 2014 by Erik Arneson <earneson@arnesonium.com>
  *   No guarantees or restrictions on use.  This code is released into the
  *   public domain.
  *
@@ -163,10 +163,10 @@ let word_size word =
 let ends_with_cvc str =
   let len = (String.length str) in
   let vowel_or_y c =
-    (is_vowel c) or c = 'y'
+    (is_vowel c) || c = 'y'
   in
   let vowel_or_wxy c =
-    (vowel_or_y c) or c = 'x' or c = 'w'
+    (vowel_or_y c) || c = 'x' || c = 'w'
   in
     if len < 3 then
       false
@@ -181,15 +181,15 @@ let ends_with_cvc str =
 let add_an_e word =
   if (word_size word) = 1 && (ends_with_cvc word) then
     true
- else
-   false
+  else
+    false
 ;;
 
 let remove_an_e word =
   if (word_size word) = 1 && not (ends_with_cvc word) then
     true
- else
-   false
+  else
+    false
 ;;
 
 let contains_vowel str =
@@ -280,6 +280,10 @@ let stem in_word =
       | [] ->
           aux_word
   in
+  (* This is a really stupid hack. Why do I need it? *)
+  if 0 = (String.compare "'s" (String.sub word (-2) 2)) then
+    word
+  else
     aux word all_rules
 ;;
 
