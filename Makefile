@@ -1,12 +1,11 @@
-# Makefile for parallel password cracker
-
+# Build stemmer library for OCaml
 CC=gcc
 CFLAGS=-O2 -Wall -Wno-unused
 CLIBS=
 CINC=-I/usr/lib/ocaml
 
-OCAMLC = ocamlc.opt
-OCAMLOPT = ocamlopt.opt
+OCAMLC = ocamlc
+OCAMLOPT = ocamlopt
 OCAMLDEP = ocamldep
 OCAMLNCFLAGS = -unsafe
 OCAMLFIND = ocamlfind
