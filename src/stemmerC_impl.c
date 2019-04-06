@@ -62,7 +62,7 @@
 #include <caml/alloc.h>
 
 /* Our prototypes */
-#include "stemmer.h"
+#include "stemmerC_impl.h"
 
 #define FALSE	0
 #define TRUE	1

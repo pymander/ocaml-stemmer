@@ -27,5 +27,3 @@ let _ =
   let chan = open_in "/usr/share/dict/words" in
     aux 0 chan
 ;;
-
-    

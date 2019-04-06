@@ -1,4 +1,0 @@
-description = "A word stemming package for the English language."
-version = "0.2"
-archive(byte) = "stemmer.cma"
-archive(native) = "stemmer.cmxa"

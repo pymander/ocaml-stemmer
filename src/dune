@@ -1,0 +1,14 @@
+(library
+ (name        stemmer)
+ (public_name ocaml-stemmer)
+ (synopsis "OCaml implementation of the Porter Stemming Algorithm ")
+ (modules stemmer)
+)
+
+(library
+ (name        stemmerC)
+ (public_name ocaml-stemmerC)
+ (synopsis "C implementation of the Porter Stemming Algorithm with ocaml bindings")
+ (c_names stemmerC_impl)
+ (modules stemmerC)
+ (c_flags -O3))
