@@ -6,3 +6,6 @@ stcaml
 *.cmxa
 *.a
 *.o
+_build
+dune-project
+.merlin

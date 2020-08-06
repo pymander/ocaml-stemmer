@@ -3,7 +3,8 @@
  (modules Test)
  (libraries ocaml-stemmer ocaml-stemmerC))
 
-(alias
- (name    runtest)
- (action  (run %{exe:test.exe})))
+(rule
+ (alias  runtest)
+ (action (run %{exe:test.exe})))
+
 
