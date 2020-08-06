@@ -1,0 +1,12 @@
+opam-version: "2.0"
+maintainer: "Erik L. Arneson <earneson@arnesonium.com>"
+authors: "Erik L. Arneson <earneson@arnesonium.com>"
+homepage: "https://github.com/pymander/ocaml-stemmer"
+bug-reports: "https://github.com/pymander/ocaml-stemmer/issues"
+license: "GNUv2"
+build: [ "dune" "build" "-j" jobs "-p" name "@install" ]
+run-test: [ "dune" "runtest" "-p" name "-j" jobs ]
+depends: [
+  "dune" {build & >= "1.7"}
+  ]
+synopsis: "A word stemming package for the English language. C bindings"

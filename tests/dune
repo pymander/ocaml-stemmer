@@ -1,0 +1,9 @@
+(executable
+ (name test)
+ (modules Test)
+ (libraries ocaml-stemmer ocaml-stemmerC))
+
+(alias
+ (name    runtest)
+ (action  (run %{exe:test.exe})))
+

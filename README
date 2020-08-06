@@ -2,7 +2,7 @@ OCaml Implementation of the Porter Stemming Algorithm
 by Erik Arneson <earneson@arnesonium.com>
 
 This package is pretty much a direct port of the algorithm
-implementation in stemmer.c.  The OCaml implementation is not
+implementation in stemmerC_impl.c.  The OCaml implementation is not
 optimized and certainly doesn't take advantage of some of the string
 manipulation tricks that the C implementation uses.
 
